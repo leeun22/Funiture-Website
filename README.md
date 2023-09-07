@@ -8,7 +8,7 @@
 </div>
 
 <h2> Link Demo </h2>
-<p> Nội Thất Minh Phong: <a href = "https://shome.vercel.app/"> http://noithatminhphong.io.vn/ </a> </p>
+<p> Nội Thất Minh Phong: <a href = "http://noithatminhphong.io.vn/"> http://noithatminhphong.io.vn/ </a> </p>
 
 <h2> Description </h2>
 <p align="justify"> 
