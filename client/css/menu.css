@@ -1,0 +1,318 @@
+.mainMenu {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0 40px 0;
+}
+
+
+/* Add class .sticky on later class .navbar-menu when scroll window, class .sticky will take action */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    overflow: visible;
+    padding: 30px 0;
+    transition: 0.3s ease-out;
+    background-color: rgb(255 255 255 / 90%);
+    /* background: linear-gradient(90deg,rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%,rgba(255, 255, 255, 0.2) 75%,rgba(255, 255, 255, 0) 100%); */
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+}
+
+.subnav-icon {
+    display: initial;
+    display: none;
+    margin-left: 15px;
+    width: 6.5%;
+}
+
+
+/* Ban đầu icon sẽ ẩn, sau khi cuộn trang icon mới hiển thị */
+
+.sticky .subnav-icon {
+    display: block;
+}
+
+
+/* Ban đầu mục drop content của Phòng thờ min-width:220px, sau khi cuộn thì đổi  */
+
+.sticky .subnav-content-ptho {
+    width: 250px;
+}
+
+.fa-bookmark {
+    /* margin-left: -38px; */
+    font-size: 18px;
+}
+
+
+/* Responsive vẫn giữ đc đúng tỉ lệ: Cha - position: relative, Con - position:absolute */
+
+.notificationSave {
+    color: rgb(121, 69, 43);
+    float: left;
+    position: relative;
+}
+
+.notificationSave .badge {
+    position: absolute;
+    top: -9px;
+    border-radius: 50%;
+    background-color: #ff3100ed;
+    color: white;
+    font-size: 10px;
+}
+
+.subnav-icon .Cart-Menu {
+    display: block;
+    color: rgb(121, 69, 43);
+    float: right;
+    position: relative;
+}
+
+.notificationCart {
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    top: -2px;
+    color: rgb(121, 69, 43);
+}
+
+.notificationCart:focus {
+    outline: none;
+}
+
+.notificationCart .badge {
+    position: absolute;
+    top: -8px;
+    right: -4px;
+    border-radius: 50%;
+    background-color: #ff3100ed;
+    color: white;
+    font-size: 10px;
+}
+
+
+/* Ẩn box giỏ hàng xem trc */
+
+.contentCart-Menu {
+    /* border: 1px solid; */
+    width: 475px;
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 59px;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 1px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.contentCart-Menu a:hover {
+    text-decoration: none;
+}
+
+
+/* Tạo 1 box content rỗng ẩn để khi trỏ chuột vào gần giỏ hàng vẫn sẽ nhận đc hover*/
+
+.Cart-Menu:after {
+    display: block;
+    content: " ";
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    /* background-color: brown; */
+    background-color: inherit;
+}
+
+
+/* Show box giỏ hàng xem trc */
+
+.Cart-Menu:hover .contentCart-Menu {
+    display: block;
+}
+
+.subnav-drop {
+    /* border: 1px solid; */
+    overflow: hidden;
+    float: left;
+    margin-right: 25px;
+}
+
+.subnav-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 250px;
+    z-index: 1;
+}
+
+#subnav-content-ptho {
+    min-width: 220px;
+}
+
+.subnav-content a {
+    float: none;
+    /* color: #303036; */
+    color: rgb(121, 69, 43);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.subnav-drop .subnavbtn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    margin: 0;
+    color: rgb(121, 69, 43);
+    /* text-shadow: 1px 5px 1px rgb(121 69 43 / 10%); */
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: unset;
+}
+
+.fa-list-ul {
+    font-size: 27px;
+    color: rgb(121, 69, 43);
+}
+
+.subnavbtn2x {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+    /*Thiết lập độ rộng khung chứ tag a và tag span - fit bằng với khung cha*/
+    width: -webkit-fill-available;
+    text-align: left;
+}
+
+.subnavbtn2x a {
+    /* border: 1px solid; */
+    display: inline-block;
+}
+
+.subnavbtn2x span {
+    /* border: 1px solid; */
+    color: #303036;
+    display: inline;
+    float: right;
+    margin-top: 14px;
+    margin-right: 5px;
+}
+
+.subnav-content2x {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    margin-left: 1px;
+    top: 1%;
+    left: 100%;
+    -moz-fit-content: fit-content;
+    -webkit-fill-available: fit-content;
+    /* min-width: fit-content; */
+    z-index: 1;
+}
+
+.subnav-content2x a {
+    /* border: 1px solid; */
+    float: left;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    width: 250px;
+}
+
+.mainMenu .navbar-menu a:hover,
+.mainMenu .fa-list-ul:hover,
+.mainMenu .fa-bookmark:hover,
+.mainMenu .fa-opencart:hover,
+.mainMenu .subnav-drop:hover .subnavbtn {
+    color: #7a3d0097;
+}
+
+
+/* Khi hover vào khung menu subnav-drop thì khung subnav-content sẽ có hiệu ứng
+/* Đổ bóng: ngang - dọc - độ mờ - độ phân tán - màu */
+
+.subnav-drop:hover .subnav-content {
+    display: block;
+    border: 1px solid #cacaca;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.subnav-content a:hover {
+    color: #7a3d0097;
+    box-shadow: 0 1px 5px rgba(176, 103, 43, 0.3);
+}
+
+.subnav-drop .subnav-content-subnav:hover .subnav-content2x {
+    display: block;
+    border: 1px solid #cacaca;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.subnav-content-subnav {
+    position: relative;
+    display: flex;
+}
+
+.subnav-content-subnav:hover {
+    box-shadow: 0 1px 5px rgba(176, 103, 43, 0.3);
+}
+
+.subnav-content .subnav-content-subnav .subnavbtn2x a:hover {
+    box-shadow: none;
+}
+
+@media screen and (max-width:1370px) {
+    .subnav-drop {
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width:1285px) {
+    .subnav-drop {
+        margin-right: 15px;
+    }
+}
+
+@media screen and (max-width:1220px) {
+    .subnav-drop {
+        margin-right: 5px;
+    }
+    .subnav-icon {
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width:1130px) {
+    .subnav-drop .subnavbtn {
+        font-size: 15px;
+    }
+    .subnav-icon {
+        margin-left: 10px;
+    }
+    .fa-list-ul {
+        font-size: 25px;
+    }
+    .fa-bookmark {
+        font-size: 17px;
+    }
+    .subnav-icon .Cart-Menu {
+        font-size: 15px;
+    }
+}

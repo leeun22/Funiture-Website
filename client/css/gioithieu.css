@@ -1,0 +1,321 @@
+/*LỢI ÍCH*/
+
+.introduce {
+    /*border: 1px solid;*/
+    margin: 0 auto;
+    width: 85%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    /*Thiết lập thời gian để thực hiện hiệu ứng chạy từ trái qua phải  */
+    /* display: none; */
+    position: relative;
+    -webkit-animation-name: animateRight;
+    -webkit-animation-duration: 2s;
+    animation-name: animateRight;
+    animation-duration: 2s;
+}
+
+
+/* Add Animation LỢI ÍCH */
+
+@-webkit-keyframes animateRight {
+    from {
+        left: -300px;
+        opacity: 0
+    }
+    to {
+        left: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animateRight {
+    from {
+        left: -300px;
+        opacity: 0
+    }
+    to {
+        left: 0;
+        opacity: 1
+    }
+}
+
+.introduce-logo {
+    text-align: center;
+}
+
+.introduce-logo h6 {
+    letter-spacing: 1px;
+    color: rgb(121, 69, 43);
+}
+
+.introduce-logo img {
+    width: 150px;
+}
+
+.introduce-logo hr {
+    width: 60px;
+    border-width: 2px;
+    background-color: darkgoldenrod;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.introduce-benefit {
+    /*border: 1px solid;*/
+    margin: 0 auto;
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    /* width: 85%; */
+    position: relative;
+    margin-top: 50px;
+}
+
+.introduce-benefit .introduce-benefit-at-tc-gia-dv {
+    /*border: 1px solid;*/
+    float: left;
+    /* width: 20%;
+    height: 10%; */
+    position: relative;
+    display: block;
+    text-align: center;
+    color: rgb(121, 69, 43);
+}
+
+.introduce-benefit-at-tc-gia-dv h5 {
+    margin-top: 30px;
+    font-weight: bolder;
+}
+
+.introduce-benefit .introduce-benefit-at-tc-gia-dv img {
+    margin: 0 auto;
+    width: 60px;
+    border: 2px solid rgb(121, 69, 43);
+    border-radius: 100%;
+    padding: 10px;
+    display: block;
+    cursor: pointer;
+}
+
+.introduce-benefit .introduce-benefit-at-tc-gia-dv img:hover {
+    position: relative;
+    top: -3%;
+    cursor: pointer;
+}
+
+.introduce-benefit .introduce-benefit-at-tc-gia-dv h5:hover {
+    text-decoration: underline;
+    text-underline-position: above;
+    cursor: pointer;
+}
+
+
+/* GIỚI THIỆU */
+
+.app-container {
+    /*chèn ảnh nền cho khối div*/
+    background-image: url(../images/slider1.png);
+    /* fix căn ảnh ở giữa khối: áp dụng cho ảnh url */
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    font-family: 'Courier New', Courier;
+    clear: both;
+}
+
+.app-overlay {
+    /*Lớp mờ*/
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    /*rgba(red, green, blue, alpha), alpha là chỉ số opacity có giá trị từ 0.0 - 1.0*/
+}
+
+.app-text-content {
+    /*khối TEXT*/
+    /* border: 1px solid; */
+    padding: 70px 0 70px 0;
+    width: 77%;
+    margin: 0 auto;
+    color: rgb(236, 236, 236);
+    position: relative;
+}
+
+.app-heading p {
+    /*khoảng cách chữ*/
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.boder-bottom {
+    /*Dấu gạch ngang*/
+    height: 1px;
+    width: 60px;
+    background-color: #ad974f!important;
+    text-align: center;
+    margin: 0 auto;
+    margin: 20px auto 30px;
+    /*khoảng cách top - bottom từ dấu gạch*/
+}
+
+.app-heading h3 {
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.app-content span {
+    color: #dab94e;
+}
+
+.app-content p {
+    font-size: 16px;
+    line-height: 32px;
+    margin: 30px 0 40px;
+    text-align: justify;
+    /*Căn chữ thẳng đều nhau*/
+    height: 320px;
+    overflow: hidden;
+}
+
+
+/*nút chi tiết*/
+
+.app-content a {
+    padding: 14px 30px;
+    color: black;
+    background-color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.app-content a:hover {
+    opacity: 0.8;
+    -ms-transform: scale(1.5);
+    /* IE 9 */
+    -webkit-transform: scale(1.5);
+    /* Safari 3-8 */
+    transform: scale(1.1);
+    transition: .5s ease;
+}
+
+.app-content-2 p {
+    letter-spacing: 2px;
+}
+
+
+/* Kích thước màn hình lap từ 1440px, thì container có width=1475px */
+
+@media (min-width: 0px) {
+    .container {
+        max-width: 1520px;
+    }
+}
+
+
+/* Kích thước màn hình lap từ 1440px, thì tỉ lệ chia mỗi cột là 25/100%: 4 cột 1 dòng */
+
+@media (min-width: 1440px) {
+    .introduce-benefit-at-tc-gia-dv {
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+}
+
+
+/* Kích thước trình duyệt nhỏ hơn 1440 (Theo form col-xxl), thì tỉ lệ chia mỗi cột là 33/100%: 3 cột 1 dòng */
+
+@media (max-width: 1440px) {
+    .introduce {
+        width: 90%;
+    }
+}
+
+
+/* Kích thước trình duyệt nhỏ hơn 1281px (Fix Lap:1280px) */
+
+@media (max-width: 1281px) {
+    .introduce {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1250px) {
+    .app-text-content {
+        width: 85%;
+    }
+}
+
+@media (max-width: 1125px) {
+    .app-text-content {
+        width: 90%;
+    }
+}
+
+
+/* Kích thước trình duyệt nhỏ hơn 1025px (Fix Lap:1024px) */
+
+@media (max-width: 1025px) {
+    .introduce-benefit-at-tc-gia-dv {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .introduce {
+        width: 70%;
+    }
+}
+
+@media (max-width:892px) {
+    .introduce {
+        width: 75%;
+    }
+}
+
+@media (max-width:835px) {
+    .introduce {
+        width: 80%;
+    }
+}
+
+@media (max-width:785px) {
+    .introduce {
+        width: 90%;
+    }
+}
+
+
+/* Kích thước trình duyệt nhỏ hơn 685px (Theo form col-xxl), thì tỉ lệ chia mỗi cột là 100/100%: 1 cột 1 dòng */
+
+@media (max-width: 685px) {
+    .introduce-benefit-at-tc-gia-dv {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .introduce {
+        width: 90%;
+    }
+    .app-text-content h3,
+    .introduce-benefit h5 {
+        font-size: 22px;
+    }
+    .app-content a {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 420px) {
+    .introduce-logo h6,
+    .introduce-benefit h5 {
+        font-size: 18px;
+    }
+}

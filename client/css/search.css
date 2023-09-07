@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+/* SEARCHh */
+
+.search-container {
+    overflow: hidden;
+    width: 60%;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.search-container input#search {
+    width: 85%;
+    height: 40px;
+    background: #FFF;
+    border: none;
+    font-size: 10pt;
+    float: left;
+    color: #767676a8;
+    padding-left: 15px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.search-container input#search:focus {
+    outline: 1px solid #ffb269d6;
+}
+
+.search-container input#search::-webkit-input-placeholder {
+    color: #65737e;
+}
+
+.search-container input#search:-moz-placeholder {
+    /* Firefox 18- */
+    color: #65737e;
+}
+
+.search-container input#search::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #65737e;
+}
+
+.search-container input#search:-ms-input-placeholder {
+    color: #65737e;
+}
+
+.search-container button.iconsearch {
+    /* thiết lập cho nút iconsearch */
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-bottomright: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: none;
+    background: #232833;
+    height: 40px;
+    width: 50px;
+    color: #b4b4b4;
+    opacity: 0;
+    font-size: 10pt;
+    -webkit-transition: all .55s ease;
+    -moz-transition: all .55s ease;
+    -ms-transition: all .55s ease;
+    -o-transition: all .55s ease;
+    transition: all .55s ease;
+}
+
+.search-container:hover button.iconsearch,
+.search-container:active button.iconsearch,
+.search-container:focus button.iconsearch {
+    outline: none;
+    opacity: 1;
+    margin-left: -50px;
+}
+
+.search-container:hover button.iconsearch:hover {
+    background: #D6D6D6;
+    color: #4f5b66;
+}

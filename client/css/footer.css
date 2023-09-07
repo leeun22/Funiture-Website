@@ -1,0 +1,227 @@
+@charset "utf-8";
+
+/* Footer */
+
+.footer {
+    /* border: 1px solid #000; */
+    /* height: 350px; */
+    color: #FFF;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 auto;
+    width: 100%;
+    clear: both;
+    overflow: hidden;
+}
+
+
+/* Row I */
+
+.footer-top {
+    /* border: 1px solid; */
+    height: 60px;
+    overflow: hidden;
+    font-size: 15px;
+    background-color: #d4aa82;
+    display: flex;
+}
+
+.footer-top-contact {
+    /* border: 1px solid; */
+    height: 100%;
+    width: 62%;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#fttop-ketnoi {
+    margin-right: 10px;
+}
+
+#fttop_img img {
+    width: 30px;
+}
+
+.footer-top-phone {
+    width: 38%;
+    display: flex;
+    padding-left: 4%;
+    align-items: center;
+}
+
+#fttop_img img:hover,
+.footer-top-phone img:hover {
+    position: relative;
+    top: -5%;
+    cursor: pointer;
+    -webkit-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+    transition: 0.3s ease;
+}
+
+.footer-top-phone img {
+    margin-right: 10px;
+    width: 30px;
+}
+
+
+/* Row II */
+
+.footer-bottom-background {
+    /* border: 1px solid; */
+    height: 100%;
+    font-size: 14px;
+    background-color: #c4956a;
+}
+
+.footer-bottom-res {
+    margin: 0 auto;
+    width: 90%;
+    height: 100%;
+    padding: 10px 0 40px 0;
+}
+
+.footer-content h6 {
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.footer-content,
+.footer-content2 {
+    /* border: 1px solid; */
+    margin: 0 auto;
+}
+
+.footer-content a {
+    /*dãn dòng*/
+    line-height: 25px;
+    text-decoration: none;
+    color: white;
+}
+
+.footer-content a:hover {
+    cursor: pointer;
+    text-decoration: 1px underline;
+    text-underline-position: above;
+}
+
+.footer-content img:hover {
+    -webkit-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.table-icon-payment {
+    margin-top: 20%;
+}
+
+.banquyen {
+    width: 255px;
+    margin-top: 30%;
+}
+
+#bocongthuong {
+    /* border: 1px solid; */
+    margin-top: 12%;
+    cursor: pointer;
+}
+
+@media (min-width: 0px) {
+    .footer {
+        max-width: 1520px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .footer-bottom-res {
+        width: 90%
+    }
+}
+
+@media screen and (max-width: 1224px) {
+    .footer-bottom-res {
+        width: 95%
+    }
+}
+
+
+/* Từ 1205px chia 6 cột */
+
+@media screen and (min-width: 1205px) {
+    .footer-content,
+    .footer-content2 {
+        -ms-flex: 0 0 16%;
+        flex: 0 0 16%;
+        max-width: 16%;
+    }
+}
+
+
+/* Từ 1200px trở xuống chia 4 cột, hết row xuống dòng */
+
+@media screen and (max-width: 1200px) {
+    .footer-content,
+    .footer-content2 {
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+}
+
+
+/* Từ 768px trở xuống chia 3 cột, hết row xuống dòng */
+
+@media screen and (max-width: 768px) {
+    .footer-bottom-res {
+        width: 100%
+    }
+    .footer-content,
+    .footer-content2 {
+        -ms-flex: 0 0 33%;
+        flex: 0 0 33%;
+        max-width: 33%;
+    }
+    .banquyen {
+        margin-top: 7%;
+    }
+}
+
+
+/* Từ 590px trở xuống chia 2 cột, hết row xuống dòng */
+
+@media screen and (max-width: 590px) {
+    .footer-content,
+    .footer-content2 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .footer-top {
+        height: 100%;
+    }
+    .footer-bottom-res {
+        padding: 10px 0 15px 0;
+    }
+    .footer-top-contact {
+        display: unset;
+        width: 50%;
+        padding: 10px 10px;
+    }
+    .footer-top-phone {
+        width: 50%;
+    }
+    .footer-top-phone span {
+        display: none;
+    }
+    .table-icon-payment {
+        margin-top: 5%;
+    }
+    .banquyen {
+        margin-top: 15%;
+    }
+    #bocongthuong {
+        margin-top: 2%;
+    }
+}

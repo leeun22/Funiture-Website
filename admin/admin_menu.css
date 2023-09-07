@@ -1,0 +1,235 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.bg_menu_vertical {
+    /*thiết lập độ tràn cho dòng: kịch đầu trang và kịch  phải; position vừa khít trang như đã định*/
+    height: 55px;
+    position: fixed;
+    z-index: 1;
+    background-color: rgb(118, 186, 189);
+    overflow-x: hidden;
+    /*padding: thiết lập vị trí của đối tượng trong dòng đó */
+    color: #FFF;
+    text-align: right;
+    padding: 10px 0;
+}
+
+.column_search_vertical {
+    /* border: 1px solid; */
+    width: 80%;
+}
+
+.logout {
+    position: relative;
+    right: 10%;
+    text-decoration-line: none;
+}
+
+.txt_logout {
+    font-size: 16px;
+    color: #FFF;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+    position: relative;
+    top: -10px;
+}
+
+
+/* Fixed sidenav, full height */
+
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: -15px;
+    left: 0;
+    background-color: rgb(74, 129, 131);
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+#sidenav-logo {
+    position: relative;
+    left: 30px;
+    padding-bottom: 10px;
+}
+
+#hr-sidenav {
+    background-color: darkgoldenrod;
+    border-width: 2px;
+}
+
+#sidenav-name {
+    color: mintcream;
+    position: relative;
+    left: 20px;
+    top: 10px;
+}
+
+
+/* Style the sidenav links and the dropdown button */
+
+.sidenav a,
+.dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: 550;
+    background-color: inherit;
+    width: 100%;
+    margin: 0;
+    cursor: pointer;
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    color: mintcream;
+    text-align: left;
+    display: block;
+}
+
+
+/* On mouse-over */
+
+.sidenav a:hover,
+.dropbtn:hover {
+    color: #f1f1f1;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+
+.dropdown-content {
+    display: none;
+    background-color: rgb(74, 129, 125);
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding-left: 8px;
+}
+
+
+/* Optional: Style the caret down icon */
+
+.fa fa-caret-down {
+    float: right;
+    padding-right: 10px;
+}
+
+.dropdown-content a {
+    float: none;
+    color: lightcyan;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+
+/* Darker background on mouse-over */
+
+.dropdown-content a:hover {
+    color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* Some media queries for responsiveness */
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+    .tieude {
+        padding-top: 0;
+    }
+}
+
+
+/* SEARCH */
+
+.search-container {
+    /* thiết lập nút button iconsearch khi chưa có hover thì k cần hiển thị */
+    overflow: hidden;
+    width: 300px;
+    vertical-align: middle;
+    white-space: nowrap;
+    float: right;
+    position: relative;
+}
+
+.search-container input#search {
+    width: 300px;
+    height: 45px;
+    background: #FFF;
+    border: none;
+    font-size: 11pt;
+    float: left;
+    color: #1a1919;
+    padding-left: 15px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.search-container input#search::-webkit-input-placeholder {
+    color: #65737e;
+}
+
+.search-container input#search:-moz-placeholder {
+    /* Firefox 18- */
+    color: #65737e;
+}
+
+.search-container input#search::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #65737e;
+}
+
+.search-container input#search:-ms-input-placeholder {
+    color: #65737e;
+}
+
+.search-container button.iconsearch {
+    /* thiết lập cho nút iconsearch */
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-bottomright: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: none;
+    background: #32353a;
+    height: 45px;
+    width: 50px;
+    color: #4f5b66;
+    opacity: 0;
+    font-size: 10pt;
+    -webkit-transition: all .55s ease;
+    -moz-transition: all .55s ease;
+    -ms-transition: all .55s ease;
+    -o-transition: all .55s ease;
+    transition: all .55s ease;
+}
+
+.search-container:hover button.iconsearch,
+.search-container:active button.iconsearch,
+.search-container:focus button.iconsearch {
+    outline: none;
+    opacity: 1;
+    margin-left: -50px;
+}
+
+.search-container:hover button.iconsearch:hover {
+    background: #D6D6D6;
+}

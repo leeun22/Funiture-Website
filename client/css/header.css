@@ -1,0 +1,860 @@
+/*----HEADER ----*/
+
+.container-head {
+    background-color: #d4aa82;
+    height: 60px;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.container-head a:hover {
+    text-decoration: none;
+}
+
+.container-head .header-hotline {
+    width: 50%;
+    height: 100%;
+    float: left;
+    display: flex;
+    align-items: center;
+}
+
+.container-head .phone-icon {
+    margin-right: 23px;
+}
+
+.container-head .material-icons {
+    color: rgb(121, 69, 43);
+    cursor: pointer;
+    text-shadow: 1px 2px 1px #707172;
+    border-radius: 50%;
+    border: 2px solid rgb(121, 69, 43);
+    padding: 5px;
+    /* Đặt tên cho hiệu ứng động */
+    animation-name: phoneShaking;
+    /* Thời gian diễn ra 1 chu trính hiệu ứng */
+    animation-duration: 0.6s;
+    /* animation-iteration-count: infinite / number. Với number = số lần lặp, infinite = vô tận  */
+    animation-iteration-count: infinite;
+}
+
+@keyframes phoneShaking {
+    0% {
+        /* thời điểm ban đầu của chu trình */
+        -webkit-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+    }
+    50% {
+        /* thời điểm giữa chu trình */
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    to {
+        /* thời điểm cuối của chu trình */
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+}
+
+.container-head .hotline {
+    font-family: 'Montserrat', sans-serif;
+    color: #FFF;
+    font-size: 14px;
+    text-shadow: 1px 2px 2px #ccc;
+}
+
+.container-head .hotline:hover {
+    text-shadow: 0 5px 5px black;
+}
+
+.container-head .header-icon {
+    float: right;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+/* Icon admin */
+
+.container-head .fa-user-cog {
+    font-size: 24px;
+    color: rgb(121, 69, 43);
+    text-shadow: 1px 2px 1px rgb(187 151 132);
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+.container-head .fa-user-cog:hover {
+    /* position: relative;
+    top: -3px; */
+    cursor: pointer;
+    color: #7a3d0097;
+}
+
+
+/* Khi hover vào box admin-icon thì hiển box thông tin của icon đó */
+
+.container-head .admin-icon .title-icon-admin {
+    visibility: hidden;
+    position: absolute;
+    right: 5%;
+    text-align: center;
+}
+
+.container-head .admin-icon:hover .title-icon-admin {
+    visibility: visible;
+}
+
+.title-icon-admin .fa-caret-up {
+    position: relative;
+    color: #d4aa82;
+    font-size: 25px;
+    top: 10.5px;
+    text-shadow: 0px -1px 3px #cdc1c1;
+}
+
+.title-icon-admin p {
+    /* border: 1px solid; */
+    font-size: 10px;
+    font-weight: bold;
+    margin-bottom: 0;
+    color: ghostwhite;
+    background-color: #d4aa82;
+    padding: 8px 10px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 3px #8d8d8d;
+}
+
+
+/* Icon customer */
+
+.dropbtn .fa-user {
+    color: rgb(121, 69, 43);
+    text-shadow: 1px 2px 1px rgb(187 151 132);
+    vertical-align: middle;
+}
+
+.dropbtn .fa-user:hover {
+    /* position: relative;
+    top: -3px; */
+    cursor: pointer;
+    color: #7a3d0097;
+}
+
+
+/* Khi hover vào box customer-icon thì hiển box thông tin của icon đó */
+
+.container-head .customer-icon .title-icon-customer {
+    visibility: hidden;
+    position: absolute;
+    right: 2.5%;
+    text-align: center;
+}
+
+.container-head .customer-icon:hover .title-icon-customer {
+    visibility: visible;
+}
+
+.title-icon-customer .fa-caret-up {
+    position: relative;
+    color: #d4aa82;
+    font-size: 25px;
+    top: 10.5px;
+    text-shadow: 0px -1px 3px #cdc1c1;
+}
+
+.title-icon-customer p {
+    /* border: 1px solid; */
+    font-size: 10px;
+    font-weight: bold;
+    margin-bottom: 0;
+    color: ghostwhite;
+    background-color: #d4aa82;
+    padding: 8px 10px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 3px #8d8d8d;
+}
+
+
+/* Icon flag */
+
+.container-head .flag-icon {
+    margin-left: 15px;
+}
+
+.container-head .avatar {
+    box-shadow: 0px 1px 5px #adadad;
+    overflow: hidden;
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.container-head .avatar2 {
+    box-shadow: 0px 1px 5px #adadad;
+    overflow: hidden;
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.container-head #dropdown-avatar {
+    background-color: #ccc;
+    border: 3px solid #c4956a;
+    border-radius: 50%;
+    padding: 2.5px 2px 1px 1.9px;
+    color: rgb(121, 69, 43);
+    font-size: 10px;
+    text-align: center;
+    position: absolute;
+    top: 35px;
+    line-height: 6.5px;
+    right: 70px;
+}
+
+.container-head .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+    right: 5%;
+    top: 50px;
+    font-weight: bold;
+    padding: 12px 16px;
+    color: rgb(121, 69, 43);
+}
+
+.container-head .dropbtn {
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.container-head .dropdown-content a {
+    color: rgb(121, 69, 43);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 5px;
+}
+
+.container-head .dropdown-content a:hover {
+    background-color: #e9e9e9;
+}
+
+.container-head .show {
+    display: block;
+}
+
+.container-head .dropdown-content .cart-profile-customer .notificationBadge {
+    bottom: 115px;
+    right: 25px;
+}
+
+
+/* Phần body trong header, Dưới phần head */
+
+.container-body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    color: rgb(121, 69, 43);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px 0 20px;
+}
+
+.col-head-content {
+    /* border: 1px solid; */
+    width: 33%;
+    display: flex;
+}
+
+.col-head-content a {
+    text-decoration: none;
+    color: rgb(121, 69, 43);
+    margin-right: 10px;
+}
+
+.col-head-content a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: rgb(121, 69, 43);
+}
+
+.col-head-content #khuyenmai {
+    color: #F00;
+}
+
+.col-head-logo {
+    /* border: 1px solid; */
+    width: 33%;
+    text-align: center;
+}
+
+.col-head-logo img {
+    width: 120px;
+}
+
+.col-head-name {
+    /* border: 1px solid; */
+    width: 100%;
+    text-align: center;
+}
+
+.head-name {
+    font-size: 19px;
+    font-family: Tahoma, Geneva, sans-serif;
+    color: rgb(121, 69, 43);
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.head-name:hover {
+    color: rgb(165, 85, 45);
+    text-decoration: none;
+}
+
+.col-head-icon {
+    /* border: 1px solid; */
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+/* Icon Support - Location - Save - Cart */
+
+.icon-body-header {
+    /* border: 1px dotted red; */
+    display: flex;
+    align-items: center;
+}
+
+.icon-body-header .icon-location {
+    padding: 0 5px;
+    color: rgb(121, 69, 43);
+}
+
+.icon-body-header .Save {
+    padding: 0 10px 0 5px;
+    color: rgb(121, 69, 43);
+}
+
+.icon-body-header .icon-location:hover,
+.icon-body-header .Save:hover {
+    color: #7a3d0097;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.notificationBadge {
+    position: absolute;
+    display: initial;
+    background-color: #ff3100ed;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.icon-body-header .Save .notificationBadge {
+    top: 112px;
+    right: 55px;
+}
+
+.icon-body-header .Cart .notificationBadge {
+    top: 112px;
+    right: 20px;
+}
+
+.Cart {
+    /* position: relative; */
+    display: inline-block;
+    color: rgb(121, 69, 43);
+}
+
+.Cart:after {
+    display: block;
+    content: " ";
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    /* background-color: brown; */
+    background-color: inherit;
+}
+
+.titleCart {
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+}
+
+.titleCart {
+    color: rgb(121, 69, 43);
+}
+
+.titleCart:focus {
+    outline: none;
+}
+
+.cart-profile-customer .fa-opencart {
+    position: relative;
+    left: -5px;
+    padding-right: 12px;
+}
+
+.customer-icon .fa-money-check {
+    margin: 6px 0 5px 0;
+    margin-right: 10%;
+}
+
+.customer-icon .fa-sign-out-alt {
+    margin-right: 12%;
+}
+
+
+/* Ẩn box giỏ hàng xem trc */
+
+.contentCart {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 170px;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 1px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 30%;
+    border-radius: 5px;
+}
+
+.contentCart a:hover {
+    text-decoration: none;
+}
+
+
+/* Show box giỏ hàng xem trc */
+
+.Cart:hover .contentCart {
+    display: block;
+}
+
+
+/* -----Icon-Bar -----*/
+
+.icon-bar {
+    position: fixed;
+    width: 100%;
+    top: 35%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.icon-bar a {
+    /* border: 1px solid red; */
+    position: absolute;
+    font-size: 16px;
+    /* color: rgb(121, 69, 43); */
+    /* background-color: rgb(169 141 127 / 80%); */
+    color: white;
+    width: 160px;
+    /* left của box thụt lề trái
+    khi hover hiệu ứng đẩy box ra  */
+    left: -100px;
+    transition: all 0.3s ease-out;
+    padding: 10px 10px 10px 15px;
+    border-radius: 0 50px 50px 0;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icon-bar a:hover {
+    left: 0;
+    text-decoration: none;
+    color: white;
+}
+
+.icon-bar i {
+    color: white;
+    font-size: 20px;
+    background: rgb(155 123 108 / 70%);
+    box-shadow: 0px 0px 2px #644a4a;
+    border-radius: 50%;
+}
+
+.facebook {
+    top: 0px;
+}
+
+.youtube {
+    top: 65px;
+}
+
+.zalo {
+    top: 130px;
+}
+
+.tiktok {
+    top: 195px;
+}
+
+.gmail {
+    top: 260px;
+}
+
+.facebook:hover {
+    background: #3B5998;
+}
+
+.facebook .fa-facebook {
+    padding: 10px 15px;
+}
+
+.facebook:hover .fa-facebook {
+    color: #3B5998;
+    background: white;
+    box-shadow: none;
+}
+
+.youtube:hover {
+    background: #bb0000;
+}
+
+.youtube .fa-youtube {
+    padding: 10px 12px;
+}
+
+.youtube:hover .fa-youtube {
+    color: #bb0000;
+    background: white;
+    box-shadow: none;
+}
+
+.zalo:hover {
+    background: #118be8;
+}
+
+.zalo span {
+    background-color: rgb(155 123 108 / 70%);
+    border-radius: 50%;
+    padding: 6px 11px 10px 11px;
+    box-shadow: 0px 0px 2px #644a4a;
+}
+
+.zalo:hover span {
+    background: white;
+    box-shadow: none;
+}
+
+.zalo:hover img {
+    /* Đổi ảnh bằng content: url() */
+    content: url("../images/icon-mxh/_zalo_icon_blue.svg");
+    background-color: white;
+}
+
+.tiktok:hover {
+    background: rgba(22, 24, 35, 1);
+}
+
+.tiktok .fa-tiktok {
+    padding: 10px 12px;
+}
+
+.tiktok:hover .fa-tiktok {
+    color: rgba(22, 24, 35, 1);
+    background: white;
+    box-shadow: none;
+}
+
+.gmail:hover {
+    background: #de6351;
+}
+
+.gmail .fa-envelope {
+    padding: 10px 11px;
+}
+
+.gmail:hover .fa-envelope {
+    color: #de6351;
+    background: white;
+    box-shadow: none;
+}
+
+
+/* Top Button */
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 2;
+    border: none;
+    outline: none;
+    background-color: #c4956a;
+    color: white;
+    cursor: pointer;
+    padding: 15px 20px;
+    border-radius: 50%;
+    box-shadow: 0 3px 2px 0 rgb(0 0 0 / 12%);
+    text-align: center;
+    scroll-behavior: smooth;
+}
+
+#myBtn:hover {
+    background-color: #a5784f;
+}
+
+#myBtn .fa-angle-up {
+    font-size: 30px;
+}
+
+
+/* Open Form Support */
+
+#myBtn_Support {
+    border: none;
+    background-color: inherit;
+    outline: none;
+}
+
+
+/* The Modal (background) */
+
+.support {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1100;
+    /* Sit on top */
+    padding-top: 30px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    /* overflow: auto; */
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+.row-support {
+    width: 100%;
+}
+
+.container-support {
+    /* border: 1px solid; */
+    /*Thiết lập cho vị trí để sau đó thực hiện đổ form từ trên xuống  */
+    position: relative;
+    margin: auto;
+    padding: 0;
+    width: 500px;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+.container-cont-sp {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 1% 0 5% 0;
+}
+
+.container-cont-sp h3 {
+    color: #ffffff;
+    position: absolute;
+}
+
+.container-form-support {
+    width: 100%;
+    border-radius: 10px;
+    background-color: #c4956a;
+    padding: 30px 50px 70px 50px;
+    /*le tren duoi, trai phai trong form*/
+    text-align: left;
+    font-weight: bold;
+    color: #f1f1f1;
+    /* display: flow-root; */
+}
+
+
+/* Add Animation */
+
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+
+/* The Close Button */
+
+.close {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #ab6a2d;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+    margin-left: 93%;
+}
+
+.close:hover,
+.close:focus {
+    color: #ab6a2d;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.container-form-support input[type=text],
+.container-form-support input[type=tel],
+.container-form-support input[type=email],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    outline: none;
+}
+
+.container-form-support input[type=text]:focus,
+.container-form-support input[type=tel]:focus,
+.container-form-support input[type=email]:focus,
+textarea:focus {
+    box-shadow: 1px 1px 3px #ffcb99;
+}
+
+.container-form-support input[type=submit] {
+    background-color: #ab6a2de6;
+    color: white;
+    padding: 3% 35%;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+    font-weight: bold;
+    position: relative;
+    left: 12%;
+    top: 30px;
+}
+
+.container-form-support input[type=submit]:hover {
+    background-color: #ab6a2d;
+    -ms-transform: scale(1.5);
+    /* IE 9 */
+    -webkit-transform: scale(1.5);
+    /* Safari 3-8 */
+    transform: scale(1.05);
+    transition: .5s ease;
+}
+
+.head-left {
+    display: none;
+}
+
+.iconsearchBlock {
+    background-color: inherit;
+    border: none;
+    color: rgb(68 68 68 / 80%);
+    font-size: 16px;
+    display: none;
+}
+
+
+/* Responsive kích thước hiển thị nhỏ hơn 1020px, bỏ phần header và menu ngang thay vào đó là menu-ipad-mobile */
+
+@media screen and (max-width: 1020px) {
+    .container-head,
+    .container-body,
+    .col-head-name,
+    .menu-hidden {
+        display: none;
+    }
+}
+
+
+/* Responsive kích thước hiển thị nhỏ hơn 768px, bỏ icon-bar */
+
+@media screen and (max-width: 768px) {
+    .icon-bar {
+        display: none;
+    }
+}
+
+
+/* Responsive kích thước hiển thị nhỏ hơn 625px, thay đổi kích thước của btn-drop-up (Top-button) và form Support */
+
+@media screen and (max-width: 625px) {
+    #myBtn {
+        right: 20px;
+    }
+    #myBtn .fa-angle-up {
+        font-size: 25px;
+    }
+    .container-support {
+        width: 90%;
+    }
+    .container-cont-sp h3 {
+        font-size: 20px;
+    }
+    .container-form-support {
+        font-size: 15px;
+        padding: 30px 30px 70px 30px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    #myBtn {
+        bottom: 80px;
+        padding: 10px 15px;
+    }
+    #myBtn .fa-angle-up {
+        font-size: 20px;
+    }
+}

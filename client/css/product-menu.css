@@ -1,0 +1,523 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+    color: rgb(121, 69, 43);
+}
+
+
+/*nội dung*/
+
+.khampha {
+    /* border: 1px solid; */
+    padding: 0 0 50px 0;
+    clear: both;
+    margin: 0 auto;
+    /* Căn giữa khung khi set các kích thước */
+    display: flow-root;
+}
+
+
+/*.khampha-background {
+     background-color: rgba(1, 120, 124, 0.027);  
+ }*/
+
+.title-main {
+    text-align: center;
+}
+
+#title-kp {
+    font-size: 30px;
+    color: rgb(121, 69, 43);
+    letter-spacing: 2px;
+    /*khoảng cách chữ*/
+    padding-top: 50px;
+}
+
+#hr-kp {
+    width: 60px;
+    background-color: darkgoldenrod;
+    margin: 0 auto;
+    border-width: 2px;
+}
+
+#title-kp-2 span {
+    color: darkgoldenrod;
+}
+
+#title-kp-2 {
+    font-size: 25px;
+    color: rgb(121, 69, 43);
+    padding-bottom: 50px;
+}
+
+.place {
+    /* border: 1px solid; */
+    width: 83%;
+    margin: 0 auto;
+    /* display: block; */
+    padding-top: 30px;
+    overflow: hidden;
+}
+
+
+/*fix khung ảnh*/
+
+.place .place_1 {
+    /* border: 1px dashed; */
+    position: relative;
+    max-width: 400px;
+    margin-bottom: 20px;
+    padding-left: 0;
+    padding-right: 0;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
+
+/*Hiệu ứng phóng ảnh*/
+
+.title-img {
+    border-radius: 4px 4px 0 0;
+    overflow: hidden;
+    background-size: cover;
+    height: 300px;
+    background-position: 50% 50%;
+    object-fit: cover;
+    width: 100%;
+}
+
+
+/*fix hình ảnh bằng 100% của khung ảnh*/
+
+.place #img_place {
+    /* border: 1px solid; */
+    display: block;
+    /* Fix theo khung của ảnh: Tối đa là 300px */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.place .place_1 .discout {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: #d03220eb;
+    color: white;
+    border: 1px solid #892a20;
+    padding: 6px 20px;
+    font: 18px 'themify';
+    text-shadow: 1px 5px 5px black;
+    border-radius: 0 20px 50px 20px;
+    /* border-radius: 20px 0; */
+    box-shadow: 1px 1px ghostwhite;
+}
+
+.place .place_1 .fa-bookmark {
+    font-size: 23px;
+    position: absolute;
+    margin-top: 10px;
+    right: 9px;
+    color: #00000099;
+}
+
+.place .place_1 .fa-bookmark:hover {
+    cursor: pointer;
+    color: #7a3d0097;
+    ;
+}
+
+
+/* Khi di chuột vào div cha place_1 thì div con img_pace bắt đầu hiệu ứng phóng ảnh */
+
+.place_1:hover #img_place {
+    -ms-transform: scale(1.03);
+    /* IE 9 */
+    -webkit-transform: scale(1.03);
+    /* Safari 3-8 */
+    transform: scale(1.03);
+    transition: .5s ease;
+}
+
+
+/* Fix content của sản phẩm (dưới img) */
+
+.title-cap {
+    /* border: 1px solid; */
+    border-radius: 0 0 4px 4px;
+    background-color: ghostwhite;
+    height: 42%;
+    box-shadow: 0 0 10px rgb(205 205 216);
+    padding: 10px 10px 20px 10px;
+    overflow: hidden;
+    display: grid;
+    align-content: center;
+}
+
+.place .place_1:hover {
+    box-shadow: 0 0 10px rgb(159 153 152 / 81%);
+}
+
+.title-cap #title-cap-name {
+    /*border: 1px solid;*/
+    float: left;
+    width: 70%;
+    height: 70px;
+    font-size: 15px;
+    text-align: left;
+    position: relative;
+    font-weight: bolder;
+    color: rgb(121, 69, 43);
+}
+
+.title-cap #title-cap-name:hover {
+    color: rgb(121 69 43 / 79%);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.title-cap .rate-star .material-icons {
+    float: left;
+    font-size: 18px;
+    color: orange;
+}
+
+.title-cap .title-price {
+    /* border: 1px solid; */
+    float: right;
+    display: grid;
+    justify-content: end;
+    line-height: 1.5;
+}
+
+.title-cap .title-price #reduced-price {
+    /* border: 1px solid; */
+    float: right;
+    color: crimson;
+    font-size: 15px;
+}
+
+.title-cap .title-price #initial-price {
+    /* border: 1px solid; */
+    float: right;
+    color: rgb(121 69 43 / 79%);
+    font-size: 14px;
+    text-decoration: line-through;
+}
+
+
+/* btn thêm vào giỏ và xem chi tiết mới */
+
+.title-btn {
+    font-size: 15px;
+    padding-top: 20px;
+    /* fix btn khi màn thu nhỏ sẽ có dạng row và căn đều sang 2 bên mép */
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.title-cap .title-btn .btn-add-cart {
+    border: 1px solid rgb(121, 69, 43);
+    position: relative;
+    background-color: ghostwhite;
+    float: left;
+    color: rgb(121, 69, 43);
+    padding: 10px 15px;
+    outline: none;
+    margin-right: 10px;
+}
+
+.title-cap .title-btn .btn-add-cart:hover,
+.titleMore .btn-more:hover {
+    background-color: #f8f8f8;
+    border: 1px solid burlywood;
+    -ms-transform: scale(1.5);
+    /* IE 9 */
+    -webkit-transform: scale(1.5);
+    /* Safari 3-8 */
+    transform: scale(1.05);
+    transition: .5s ease;
+}
+
+.title-cap .title-btn .btn-detail-product {
+    border: 1px solid #9d5710ca;
+    position: relative;
+    background-color: #9d5710ca;
+    float: right;
+    color: ghostwhite;
+    padding: 10px 15px;
+    outline: none;
+}
+
+.title-cap .title-btn .btn-detail-product:hover {
+    background-color: #9d5710;
+    -ms-transform: scale(1.5);
+    /* IE 9 */
+    -webkit-transform: scale(1.5);
+    /* Safari 3-8 */
+    transform: scale(1.05);
+    transition: .5s ease;
+}
+
+.titleMore {
+    /* border: 1px solid; */
+    display: flex;
+    padding: 30px 0 20px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleMore .btn-more {
+    border: 1px solid burlywood;
+    color: #9d5710;
+    background-color: white;
+    padding: 10px 25px;
+    outline: none;
+}
+
+
+/* TIN TỨC */
+
+.place-cap {
+    /* border: 1px solid; */
+    border-radius: 0 0 4px 4px;
+    background-color: ghostwhite;
+    height: 37%;
+    box-shadow: 0 0 10px rgb(205 205 216);
+    padding: 10px 10px 15px 10px;
+    overflow: hidden;
+    display: grid;
+    color: rgb(121, 69, 43);
+}
+
+.place-btn {
+    position: absolute;
+    left: 30%;
+    font-size: 15px;
+}
+
+.place-btn .btn-detail {
+    padding: 10px 15px;
+    background: #9d5710;
+    color: ghostwhite;
+    border: none;
+    box-shadow: 1px 1px 5px #0000008a;
+    visibility: hidden;
+    outline: none;
+}
+
+.place_1:hover .btn-detail {
+    padding: 10px 15px;
+    background: #9d5710;
+    color: ghostwhite;
+    border: none;
+    box-shadow: 1px 1px 5px #0000008a;
+    visibility: visible;
+    transform: translateY(-70px);
+    transition: 0.5s ease;
+}
+
+.place-cap #name-news:hover {
+    color: rgb(121 69 43 / 79%);
+    cursor: pointer;
+}
+
+.place-cap #des-news {
+    text-align: justify;
+}
+
+
+/* BOX NOTIFICATION CART*/
+
+#box-notification {
+    /* visibility: hidden; */
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #fcfcfc;
+    box-shadow: 1px 1px 5px #0000000d;
+    color: #312323;
+    text-align: center;
+    border-radius: 10px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    top: 100px;
+    font-size: 17px;
+}
+
+#box-notification .check-cart {
+    border: none;
+    color: ghostwhite;
+    background-color: #9d5710;
+    width: 100%;
+    padding: 10px;
+    margin-top: 16px;
+    border-radius: 5px;
+    outline: none;
+}
+
+#box-notification .btn-delete-noti {
+    font-size: 25px;
+    cursor: pointer;
+    color: #af0000bd;
+    padding-left: 25px;
+}
+
+#box-notification .check-cart:hover {
+    background-color: #ae6114;
+}
+
+#box-notification.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {
+        top: 0;
+        opacity: 0;
+    }
+    to {
+        top: 100px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        top: 0;
+        opacity: 0;
+    }
+    to {
+        top: 100px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    from {
+        top: 100px;
+        opacity: 1;
+    }
+    to {
+        top: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        top: 100px;
+        opacity: 1;
+    }
+    to {
+        top: 0;
+        opacity: 0;
+    }
+}
+
+@media (min-width: 0px) {
+    .container {
+        max-width: 1520px;
+    }
+}
+
+
+/* Kích thước màn hình lap từ 1440px, thì tỉ lệ chia mỗi cột là 25/100%: 4 cột 1 dòng */
+
+@media (min-width: 1440px) {
+    .place_1 {
+        -ms-flex: 0 0 33%;
+        flex: 0 0 33%;
+        max-width: 33%;
+    }
+}
+
+
+/* Kích thước màn hình lap từ 1024px, thì tỉ lệ chia mỗi cột là 25/100%: 4 cột 1 dòng */
+
+@media (max-width: 1441px) {
+    .place {
+        width: 86%;
+    }
+}
+
+@media (max-width: 1400px) {
+    .place {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1350px) {
+    .place {
+        width: 95%;
+    }
+}
+
+@media (max-width: 1281px) {
+    .place {
+        width: 97%;
+    }
+}
+
+@media (max-width: 1270px) {
+    .place_1 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .place {
+        width: 75%;
+    }
+}
+
+@media (max-width: 1080px) {
+    .place {
+        width: 81%;
+    }
+}
+
+@media (max-width: 992px) {
+    .place {
+        width: 85%;
+    }
+}
+
+@media (max-width: 950px) {
+    .place {
+        width: 91%;
+    }
+}
+
+@media (max-width: 890px) {
+    .place {
+        width: 99%;
+    }
+}
+
+
+/* Từ 768px tỉ lệ của mỗi cột sẽ = 100% fix = width đã set cho cột. Nếu quá dòng sẽ tự xuống dòng */
+
+@media (max-width: 815px) {
+    .place_1 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .place {
+        width: 90%;
+    }
+}
+
+@media (max-width: 420px) {
+    #title-kp {
+        font-size: 25px;
+    }
+    .place {
+        width: 95%;
+    }
+}

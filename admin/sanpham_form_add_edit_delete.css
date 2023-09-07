@@ -1,0 +1,134 @@
+.qlynen {
+    width: 87%;
+    overflow-x: hidden;
+    top: 45px;
+    background-color: #E8E8FF;
+    position: absolute;
+    margin: 3% 0 0 13%;
+    padding-bottom: 10%;
+    overflow: hidden;
+}
+
+.qlytrong {
+    width: 85%;
+    margin: 0 auto;
+    padding: 20px;
+    overflow: auto;
+}
+
+.qlynen .qlytrong h3 {
+    font-weight: bold;
+    color: #1B1A39;
+    text-align: center;
+}
+
+.container_form_sp {
+    border-radius: 10px;
+    background-color: #FFF;
+    border: 1px solid #ccc;
+    padding: 30px 50px 70px 50px;
+    text-align: left;
+    font-weight: bold;
+    color: #1B1A39;
+    margin: 0 auto;
+    width: 55%;
+    height: 30%;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 20px;
+    resize: vertical;
+}
+
+input[type=file] {
+    margin-bottom: 20px;
+    /* Người dùng có thể thay đổi chiều rộng nội dung của thành phần. */
+    resize: vertical;
+}
+
+select[name="category_id"] {
+    margin-bottom: 20px;
+    resize: vertical;
+    padding: 10px;
+    width: 21%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-right: 7%;
+}
+
+select[name="categorize_id"] {
+    margin-bottom: 20px;
+    resize: vertical;
+    padding: 10px;
+    width: 24%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    font-size: 13px;
+}
+
+input[type=datetime-local] {
+    width: 30%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    color: #818181;
+    font-size: 12px;
+}
+
+input[name="created_at"] {
+    margin-right: 8%;
+}
+
+input[name="created_id"] {
+    margin-right: 8%;
+}
+
+input[type=submit] {
+    background-color: #498f92;
+    color: white;
+    padding: 15px 0;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 35%;
+}
+
+input[type=submit]:hover {
+    background-color: #59a2a6;
+}
+
+input[type=button] {
+    background-color: #498f92;
+    color: white;
+    padding: 15px 0;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 35%;
+}
+
+input[type=button]:hover {
+    background-color: #59a2a6;
+}
+
+.btn_action_sp {
+    text-align: center;
+    letter-spacing: 110px;
+    margin-top: 25px;
+}

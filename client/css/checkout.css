@@ -1,0 +1,301 @@
+/* back-ground */
+
+.background-checkout {
+    /* border: 1px solid; */
+    margin: 0 auto;
+    /* width: 85%; */
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(121, 69, 43);
+    clear: both;
+    display: flex;
+    letter-spacing: 0.5px;
+    margin-top: 30px;
+}
+
+.background-checkout .order {
+    display: flex;
+    align-items: flex-start;
+}
+
+
+/*** THÔNG TIN GIAO HÀNG ***/
+
+.title-infor-customer {
+    /* border: 1px solid blue; */
+    font-weight: bold;
+    padding: 20px 0 20px 0;
+}
+
+.infor-address-customer .customer label[for=name],
+.infor-address-customer .customer label[for=phone],
+.infor-address-customer .customer label[for=email],
+.infor-address-customer .customer label[for=city],
+.infor-address-customer .customer label[for=town],
+.infor-address-customer .customer label[for=address] {
+    font-size: 13px;
+}
+
+.infor-address-customer .customer label span {
+    color: #ca0000;
+}
+
+.infor-address-customer .customer input[type=text],
+.infor-address-customer .customer input[type=tel],
+.infor-address-customer .customer input[type=email],
+.infor-address-customer .customer textarea {
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    padding: 7px;
+    box-shadow: 0px 1px 1px #cccccc8f inset;
+    margin-bottom: 20px;
+    outline: none;
+    width: 100%;
+    color: rgb(121, 69, 43);
+    font-size: 14px;
+}
+
+.infor-address-customer .customer input[type=text]:focus,
+.infor-address-customer .customer input[type=tel]:focus,
+.infor-address-customer .customer input[type=email]:focus,
+.infor-address-customer .customer textarea:focus {
+    box-shadow: 1px 1px 5px rgb(255 198 154 / 56%);
+    border: 1px solid rgb(255 198 154 / 56%);
+}
+
+.infor-address-customer .customer #infor-tag-p-1 {
+    /* border: 1px solid; */
+    width: 48%;
+    float: left;
+    margin-bottom: 0;
+}
+
+.infor-address-customer .customer #infor-tag-p-2 {
+    /* border: 1px solid; */
+    width: 48%;
+    float: right;
+    margin-bottom: 0;
+}
+
+.infor-address-customer .customer label[for=notes] {
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+
+/* PHƯƠNG THỨC THANH TOÁN */
+
+.payment-methods .type-methods {
+    margin: 30px 0;
+    overflow: hidden;
+    display: inline-flex;
+    width: 100%;
+}
+
+.payment-methods .type-methods .icon-payment-type {
+    width: 90%;
+    display: flex;
+}
+
+.payment-methods .type-methods .icon-payment-type div {
+    border: 1px solid #ccc;
+    width: 43%;
+    height: 150px;
+    padding: 30px 0;
+    text-align: center;
+    /* z-index: 1; */
+}
+
+.payment-methods .type-methods .payment-type {
+    width: 76%;
+    height: 160px;
+    border: none;
+    overflow: unset;
+    background-color: unset;
+    outline: none;
+    position: absolute;
+}
+
+.payment-methods #payment-banking,
+.payment-methods #payment-delivery {
+    /* border: 1px solid; */
+    background-color: inherit;
+    color: rgb(121, 69, 43);
+    font-size: 14px;
+    outline: none;
+    text-align: center;
+    height: 94%;
+    width: 48%;
+}
+
+.payment-methods #payment-banking {
+    float: left;
+}
+
+.payment-methods #payment-delivery {
+    float: right;
+}
+
+.payment-methods .tabcontent {
+    display: none;
+    padding: 6px 12px;
+}
+
+#payment-banking:hover #icon-banking p,
+#payment-delivery:hover #icon-delivery p {
+    margin-top: 10px;
+}
+
+#payment-banking:hover #icon-banking,
+#payment-delivery:hover #icon-delivery {
+    border: 1px solid black;
+}
+
+.tablinks:focus #icon-banking,
+.tablinks:focus #icon-delivery {
+    z-index: 1;
+}
+
+
+/***TÓM TẮT ĐƠN HÀNG ***/
+
+.order-summary {
+    /* width: 45%; */
+    padding: 20px;
+    /* margin-left: 30px; */
+    box-shadow: 1px 1px 3px #ccc;
+    border: 2px dashed #9d5710ca;
+    margin-bottom: 40px;
+}
+
+.order-title #title {
+    float: left;
+    clear: both;
+}
+
+.product-table {
+    line-height: 45px;
+    font-size: 14px;
+    color: rgb(121, 69, 43);
+    margin-top: 20px;
+}
+
+#product-table-ID {
+    text-align: right;
+}
+
+
+/*-- CSS Tổng Tiền --*/
+
+.totalPrice_Products {
+    text-align: right;
+    font-weight: bold;
+    color: #ca0000;
+    font-size: 15px;
+}
+
+
+/* Sản phẩm trong giỏ */
+
+
+/* khung table */
+
+.product-detail-cart {
+    /* border: 1px solid;  */
+    overflow: hidden;
+}
+
+.product-detail-cart .title-prode-checkout {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.product-detail-cart .shop-table-checkout {
+    clear: both;
+}
+
+#hr-title-checkout {
+    clear: both;
+    border: 2px solid;
+    width: 10%;
+    float: left;
+}
+
+.product-detail-cart .shop-image-checkout {
+    margin: 10px 0;
+}
+
+.product-detail-cart .shop-image-checkout img {
+    width: 100%;
+    box-shadow: 1px 5px 2px #ccc;
+    border: ridge;
+}
+
+.product-detail-cart .shop-details-checkout {
+    padding: 10px 0 10px 20px;
+}
+
+.product-detail-cart .shop-details-checkout .productName-checkout {
+    font-weight: bold;
+    color: rgb(121, 69, 43);
+    padding-bottom: 10px;
+}
+
+.product-detail-cart .shop-details-checkout .productCode-Quantity-Price-checkout {
+    font-size: 14px;
+    color: rgb(121, 69, 43);
+}
+
+.productCode-Quantity-Price-checkout #price-checkout {
+    float: right;
+    color: #ca0000;
+    font-weight: bold;
+}
+
+.product-detail-cart .shop-details-checkout .productCode-Quantity-Price-checkout #quantity-checkout {
+    font-size: 14px;
+    color: rgb(121, 69, 43);
+    width: 31px;
+    text-align: center;
+    border: none;
+    background: inherit;
+}
+
+
+/* Thông tin giao hàng */
+
+.product-infor {
+    text-align: left;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.product-button {
+    padding: 50px 0;
+    outline: none;
+}
+
+.product-button .btnCheckout {
+    border: 1px solid #9d5710ca;
+    padding: 10px 15px;
+    background-color: #9d5710ca;
+    color: ghostwhite;
+    width: 100%;
+    float: right;
+    margin-bottom: 50px;
+    outline: none;
+}
+
+.product-button .btnCheckout:hover {
+    background-color: #9d5710;
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+    border: 1px solid burlywood;
+}
+
+@media (min-width: 0px) {
+    .container {
+        max-width: 1200px;
+    }
+}

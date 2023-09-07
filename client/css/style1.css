@@ -1,0 +1,118 @@
+@charset "utf-8";
+/* CSS Document */
+/*spbanchay*/
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.row {
+	margin: 16px 100px;
+}
+ 
+.column {
+  float: left;
+  width: 33%;
+  margin-bottom: 16px;
+  padding: 10px;
+}
+
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+/* dieu chinh dai nen mau trang của khung */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+  width: 45%;
+}
+
+
+<!-- dieu chinh o table dich xuong, dich phai-->
+.container {
+  padding: 0 16px;
+
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  font-size:14.5px;
+  color:#333;
+  text-align: left;
+  cursor: pointer;
+}
+
+.discount {
+  color:#FFF;
+  background-color:#F90;
+  text-align:right;
+  width: 45%;
+}
+
+.gia {
+	color:#F00;
+	text-align:right;
+}
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #1B1A39;
+  text-align: center;
+  cursor: pointer;
+  width: 35%;
+}
+
+.button:hover {
+  background-color: #005;
+}
+
+.image_ct {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle_ct {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.card:hover .image_ct {
+  opacity: 0.3;
+}
+
+.card:hover .middle_ct {
+  opacity: 1;
+}
+
+.text_ct {
+  background-color: #F90;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+

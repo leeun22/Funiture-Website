@@ -1,0 +1,329 @@
+/* back-ground */
+
+.background-cart {
+    /* border: 1px solid; */
+    margin: 0 auto;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(121, 69, 43);
+    clear: both;
+    display: flex;
+    letter-spacing: 0.5px;
+    margin-top: 30px;
+}
+
+
+/*** SẢN PHẨM TRONG GIỎ HÀNG ***/
+
+.product-title #title,
+.product-title #title-more {
+    float: left;
+    clear: both;
+}
+
+.product-title #title-more {
+    color: #d26a00e3;
+}
+
+
+/* khung table */
+
+.product-cart {
+    /* border: 1px solid; */
+    margin-top: 60px;
+    clear: both;
+    overflow: hidden;
+    background-color: #fafafa;
+    padding: 0px 20px;
+    box-shadow: 1px 1px 3px #ccc;
+    border: ridge;
+}
+
+.shop-image img {
+    width: 100%;
+    box-shadow: 1px 5px 2px #ccc;
+    border: ridge;
+}
+
+.product-cart .shop-details {
+    padding: 15px 0 15px 20px;
+    line-height: 25px;
+}
+
+.shop-details .productName a {
+    font-weight: bold;
+    color: rgb(121, 69, 43);
+    padding-bottom: 15px;
+}
+
+.shop-details .productCode,
+.shop-details .productSize,
+.shop-details .productMaterial {
+    font-size: 13px;
+    color: rgb(121, 69, 43);
+}
+
+.shop-details .productPrice {
+    color: rgb(121, 69, 43);
+    font-size: 14px;
+    padding-top: 15px;
+    font-weight: bold;
+}
+
+.shop-details .productQuantity {
+    /* Thiết lập 3 đối tượng input thành 1 hàng */
+    display: inline-flex;
+    white-space: nowrap;
+    vertical-align: top;
+    margin-top: 15px;
+}
+
+.productQuantity input[type=button] {
+    padding: 0 16px;
+    font-size: 18px;
+    border: 1px solid #ebeaea !important;
+    background: #fff;
+    cursor: pointer;
+}
+
+.productQuantity input[type=button]:hover {
+    background: #e6e6e6;
+}
+
+.productQuantity input[type=text] {
+    border: 1px solid #ebeaea;
+    padding: 10px 5px !important;
+    text-align: center;
+    width: 40px;
+    font-size: 14px;
+    outline: none;
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+
+/* .shop-details .productQuantity #inputQuantity {
+    font-size: 14px;
+    color: #533939;
+    width: 31px;
+    text-align: center;
+} */
+
+.action-total .actionDelete {
+    font-size: 25px;
+    cursor: pointer;
+    color: #af0000bd;
+    text-align: right;
+    margin-top: 15%;
+}
+
+.action-total a:hover {
+    text-decoration: none;
+}
+
+.action-total .totalPrice {
+    color: rgb(121, 69, 43);
+    font-weight: bold;
+    text-align: right;
+    margin-top: 110%;
+}
+
+.update-cart {
+    float: left;
+    padding: 40px 0;
+}
+
+.update-cart .btnUpdate {
+    border: 1px solid #9d5710ca;
+    padding: 10px 20px;
+    background-color: #9d5710ca;
+    color: ghostwhite;
+    outline: none;
+}
+
+.update-cart .btnUpdate:hover {
+    background-color: #9d5710;
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+    border: 1px solid burlywood;
+}
+
+
+/***TÓM TẮT ĐƠN HÀNG ***/
+
+.order-summary {
+    /* width: 40%; */
+    padding: 20px;
+    /* margin-left: 30px; */
+    margin-top: 85px;
+    box-shadow: 1px 1px 3px #ccc;
+    border: 2px dashed #9d5710ca;
+    margin-bottom: 40px;
+}
+
+.order-title #title {
+    float: left;
+    clear: both;
+}
+
+.product-table {
+    line-height: 45px;
+    font-size: 14px;
+    color: rgb(121, 69, 43);
+    margin-top: 20px;
+}
+
+#product-table-ID {
+    text-align: right;
+}
+
+
+/*--- Input Focus --*/
+
+.inputDiscount {
+    border: 1px solid rgb(121, 69, 43);
+    /* border-radius: 4px; */
+    float: left;
+    width: 20rem;
+    height: 40px;
+    font-size: 14px;
+    color: rgb(121, 69, 43);
+    padding: 0 20px;
+    transition: 0.25s ease;
+    /* Khi click vào input thì k hiển thị outline của input nữa*/
+    outline: none;
+}
+
+
+/* Khi focus vào input (Click vào input) thì thuộc tính sẽ đc thực hiện */
+
+.inputDiscount:focus {
+    border-color: #9d5710ca;
+}
+
+.productDiscount,
+.productSubmit {
+    position: relative;
+    display: inline-flex;
+}
+
+.labelDiscount {
+    font-size: 14px;
+    color: #4d4d4dc2;
+    position: absolute;
+    left: 21px;
+    top: 40px;
+    /* Xác định một dịch chuyển 2D theo trục Y. */
+    transform: translateY(-30px);
+    /* Thiết lập cho text: khi người dùng click vào không thể được select (chọn) đc */
+    -webkit-user-select: none;
+    user-select: none;
+    /* Thiết lập cho text: chìm đi (coi như nền có chữ), giúp cho input k bị ảnh hg khi click vào bị vướng text*/
+    pointer-events: none;
+    transition: 0.25s ease;
+}
+
+
+/* Khi focus vào input, thì sẽ k nhận placeholder đc shown (chính là khoảng trắng đã đặt ở html) mà nhận phần tử .labelDiscount.
+    Khi k focus vào input nữa (click ra ngoài input) thì placeholder sẽ đc shown (1 ký tự trống). 
+    => Việc này giúp phần tử .labelDiscount k bị ảnh hưởng vào text mà ng dg nhập từ bàn phím.
+    Khi focus vào input (Click vào input) thì thuộc tính của phần tử .labelDiscount sẽ đc thực hiện */
+
+.inputDiscount:not(:placeholder-shown)+.labelDiscount,
+.inputDiscount:focus+.labelDiscount {
+    top: 20px;
+    padding: 0 10px;
+    display: inline-block;
+    background-color: white;
+    color: #9d5710ca;
+}
+
+
+/* Nút submit của mã giảm giá */
+
+.productSubmit .submit {
+    border: 1px solid #9d5710ca;
+    padding: 8px 35px;
+    background-color: #9d5710ca;
+    color: ghostwhite;
+    font-size: 14px;
+    outline: none;
+    margin-top: 10px;
+}
+
+.productSubmit .submit:hover {
+    background-color: #9d5710;
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+    border: 1px solid burlywood;
+}
+
+
+/*-- CSS Tổng Tiền --*/
+
+.totalPrice_Products {
+    text-align: right;
+    font-weight: bold;
+    color: #ca0000;
+    font-size: 15px;
+}
+
+.product-infor {
+    text-align: left;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.product-button {
+    padding: 50px 0;
+    outline: none;
+    /* Tự căn btn khi màn thu nhỏ */
+    display: inline-flex;
+}
+
+.product-button .btnMore {
+    border: 1px solid rgb(121, 69, 43);
+    background-color: inherit;
+    float: left;
+    color: rgb(121, 69, 43);
+    padding: 10px 15px;
+    outline: none;
+    margin-right: 3.5rem;
+}
+
+.product-button .btnMore:hover {
+    background-color: #9d5710ca;
+    transition: 0.3s;
+    color: ghostwhite;
+    border: 1px solid burlywood;
+}
+
+.product-button .btnCheckout {
+    border: 1px solid #9d5710ca;
+    padding: 10px 55px;
+    background-color: #9d5710ca;
+    color: ghostwhite;
+    float: right;
+    margin-bottom: 50px;
+    outline: none;
+}
+
+.product-button .btnCheckout:hover {
+    background-color: #9d5710;
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+    border: 1px solid burlywood;
+}
+
+@media (min-width: 0px) {
+    .background-cart {
+        max-width: 1300px;
+    }
+}
+
+@media (max-width: 410px) {
+    .product-button {
+        font-size: 13px;
+    }
+}
