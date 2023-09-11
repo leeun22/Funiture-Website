@@ -5,6 +5,7 @@
     height: 60px;
     width: 100%;
     padding: 0 20px;
+    margin: 0 auto;
 }
 
 .container-head a:hover {
@@ -272,6 +273,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 20px 20px 0 20px;
+    margin: 0 auto;
 }
 
 .col-head-content {
@@ -808,6 +810,13 @@ textarea:focus {
 
 
 /* Responsive kích thước hiển thị nhỏ hơn 1020px, bỏ phần header và menu ngang thay vào đó là menu-ipad-mobile */
+
+@media (min-width: 0) {
+    .container-head,
+    .container-body {
+        max-width: 1550px;
+    }
+}
 
 @media screen and (max-width: 1020px) {
     .container-head,

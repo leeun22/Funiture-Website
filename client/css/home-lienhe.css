@@ -10,6 +10,7 @@
     text-align: center;
     font-family: 'Courier New', Courier;
     clear: both;
+    margin: 0 auto;
 }
 
 
@@ -109,6 +110,12 @@
     /* Safari 3-8 */
     transform: scale(1.1);
     transition: .5s ease;
+}
+
+@media screen and (min-width: 0) {
+    .contact {
+        max-width: 1550px;
+    }
 }
 
 @media screen and (max-width: 1115px) {

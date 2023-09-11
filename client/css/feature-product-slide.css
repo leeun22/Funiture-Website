@@ -257,9 +257,9 @@ section .card #img_place {
 
 /* Kích thước trình duyệt nhỏ hơn 1400 (Theo form col-xxl), thì tỉ lệ chia mỗi cột là 33/100%: 3 cột 1 dòng */
 
-@media (max-width: 1450px) {
+@media (max-width: 1441px) {
     .slide-feature-product {
-        width: 70%;
+        width: 88%;
     }
 }
 
@@ -284,18 +284,6 @@ section .card #img_place {
 @media (max-width: 1075px) {
     .slide-feature-product {
         width: 90%;
-    }
-}
-
-@media (max-width: 1025px) {
-    .slide-feature-product {
-        width: 95%;
-    }
-}
-
-@media (max-width: 992px) {
-    .slide-feature-product {
-        width: 65%;
     }
 }
 

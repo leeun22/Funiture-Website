@@ -1,128 +1,125 @@
-/* body {
+    /* body {
     margin: 0 auto;
     padding: 0;
 } */
-
-.tab-bar-mobile {
-    padding: 0;
-    margin: 0;
-    margin-top: 65px;
-    display: none;
-}
-
-
-/* Style the tab */
-
-.tab-titile {
-    /* border: 1px solid; */
-    width: 100%;
-    height: 65px;
-    font-family: Verdana, sans-serif;
-    color: rgb(121, 69, 43);
-    background-color: white;
-    box-shadow: 0 0 10px #c2c2c2;
-    overflow: hidden;
-    z-index: 3;
-    position: fixed;
-    bottom: 0;
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-around;
-}
-
-
-/* Style the buttons inside the tab */
-
-.tab-titile button {
-    background-color: inherit;
-    /* float: left; */
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 10px 10px;
-    transition: 0.3s;
-    color: rgb(65 65 65 / 60%);
-    /* line-height: 22px; */
-}
-
-
-/* Change background color of buttons on hover */
-
-.tab-titile button:hover {
-    background-color: inherit;
-}
-
-
-/* Create an active/current tablink class
+    
+    .tab-bar-mobile {
+        padding: 0;
+        margin: 0;
+        margin-top: 65px;
+        display: none;
+    }
+    /* Style the tab */
+    
+    .tab-titile {
+        /* border: 1px solid; */
+        width: 100%;
+        height: 65px;
+        font-family: Verdana, sans-serif;
+        color: rgb(121, 69, 43);
+        background-color: white;
+        box-shadow: 0 0 10px #c2c2c2;
+        overflow: hidden;
+        z-index: 3;
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-around;
+    }
+    /* Style the buttons inside the tab */
+    
+    .tab-titile button {
+        background-color: inherit;
+        /* float: left; */
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 10px 10px;
+        transition: 0.3s;
+        color: rgb(65 65 65 / 60%);
+        /* line-height: 22px; */
+    }
+    /* Change background color of buttons on hover */
+    
+    .tab-titile button:hover {
+        background-color: inherit;
+    }
+    /* Create an active/current tablink class
 Khi click vào button thì nhận 1 hđ active */
-
-.tab-titile button.active {
-    background-color: inherit;
-    color: rgb(121, 69, 43);
-}
-
-.tab-titile button:focus,
-.tab-titile button:hover {
-    background-color: inherit;
-    color: rgb(121, 69, 43);
-}
-
-.tab-titile button.active .khampha {
-    display: none;
-}
-
-
-/* Style the tab content */
-
-.tab-titile p {
-    margin: 0;
-    font-size: 14px;
-}
-
-.tab-titile i {
-    margin-bottom: 5px;
-}
-
-.tabcontent-mobile {
-    display: none;
-    font-family: Verdana, sans-serif;
-    color: rgb(121, 69, 43);
-}
-
-.tab-bar-mobile .avatar {
-    border: 2px solid rgb(65 65 65 / 50%);
-    overflow: hidden;
-    vertical-align: middle;
-    width: 27px;
-    height: 27px;
-    border-radius: 50%;
-}
-
-.tab-bar-mobile .tablinks-title-mobile:hover .avatar {
-    border: 2px solid rgb(121, 69, 43);
-    transition: 0.3s;
-}
-
-.notificationBadgeMobile {
-    position: absolute;
-    display: initial;
-    background-color: #ff3100ed;
-    color: white;
-    border-radius: 50%;
-    padding: 1px 5px;
-    font-size: 8px;
-    top: 2px;
-    font-weight: bold;
-}
-
-@media screen and (min-width:0) {
-    .tab-bar-mobile {
-        width: 1475px;
+    
+    .tab-titile button.active {
+        background-color: inherit;
+        color: rgb(121, 69, 43);
     }
-}
-
-@media screen and (max-width: 470px) {
-    .tab-bar-mobile {
-        display: block;
+    
+    .tab-titile button:focus,
+    .tab-titile button:hover {
+        background-color: inherit;
+        color: rgb(121, 69, 43);
     }
-}
+    
+    .tab-titile button.active .khampha {
+        display: none;
+    }
+    /* Style the tab content */
+    
+    .tab-titile p {
+        margin: 0;
+        font-size: 14px;
+    }
+    
+    .tab-titile i {
+        margin-bottom: 5px;
+    }
+    
+    .tabcontent-mobile {
+        display: none;
+        font-family: Verdana, sans-serif;
+        color: rgb(121, 69, 43);
+    }
+    
+    .tab-bar-mobile .avatar {
+        border: 2px solid rgb(65 65 65 / 50%);
+        overflow: hidden;
+        vertical-align: middle;
+        width: 27px;
+        height: 27px;
+        border-radius: 50%;
+    }
+    
+    .tab-bar-mobile .tablinks-title-mobile:hover .avatar {
+        border: 2px solid rgb(121, 69, 43);
+        transition: 0.3s;
+    }
+    
+    .notificationBadgeMobile {
+        position: absolute;
+        display: initial;
+        background-color: #ff3100ed;
+        color: white;
+        border-radius: 50%;
+        padding: 1px 5px;
+        font-size: 8px;
+        top: 2px;
+        font-weight: bold;
+    }
+    
+    @media screen and (min-width:0) {
+        .tab-bar-mobile {
+            width: 1475px;
+        }
+    }
+    
+    @media screen and (max-width: 470px) {
+        .tab-bar-mobile {
+            display: block;
+        }
+    }
+    
+    @media screen and (max-width:320px) {
+        .tab-titile p {
+            margin: 0;
+            font-size: 12px;
+        }
+    }

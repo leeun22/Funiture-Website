@@ -121,7 +121,7 @@
                     slidesPerView: 3,
                 },
                 // Từ 1450: 3 cột
-                1450: {
+                1440: {
                     slidesPerView: 4,
                 },
             },

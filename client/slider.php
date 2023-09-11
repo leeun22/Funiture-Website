@@ -15,7 +15,7 @@
 
      /* Slideshow container */
      .slideshow-container {
-       max-width: 100%;
+       /* max-width: 100%; */
        position: relative;
        margin: 0 auto;
        text-align: center;

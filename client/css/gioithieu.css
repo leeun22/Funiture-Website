@@ -124,6 +124,7 @@
     text-align: center;
     font-family: 'Courier New', Courier;
     clear: both;
+    margin: 0 auto;
 }
 
 .app-overlay {
@@ -214,8 +215,9 @@
 /* Kích thước màn hình lap từ 1440px, thì container có width=1475px */
 
 @media (min-width: 0px) {
-    .container {
-        max-width: 1520px;
+    .container,
+    .app-container {
+        max-width: 1550px;
     }
 }
 

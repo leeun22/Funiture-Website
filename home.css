@@ -667,7 +667,7 @@ Khi di chuột vào div cha place_1 thì div con img_pace bắt đầu hiệu �
     .app-container,
     .slideshow-container,
     .container {
-        max-width: 1550px;
+        max-width: 1440px;
     }
 }
 
@@ -682,7 +682,7 @@ Khi di chuột vào div cha place_1 thì div con img_pace bắt đầu hiệu �
         max-width: 25%;
     }
     .place {
-        width: 84%;
+        width: 88%;
     }
 }
 
@@ -1002,16 +1002,6 @@ và (Ipad Pro N: 834px) */
     .title-cap .title-btn .btn-add-cart,
     .title-cap .title-btn .btn-detail-product {
         padding: 8px 5px;
-    }
-}
-
-@media screen and (max-width:373px) {
-    .place .place_1 {
-        max-width: 170px;
-    }
-    .title-cap .title-btn .btn-add-cart,
-    .title-cap .title-btn .btn-detail-product {
-        padding: 8px 3px;
     }
 }
 
