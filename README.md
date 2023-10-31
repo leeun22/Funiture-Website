@@ -15,7 +15,7 @@
   &emsp; Noi That Minh Phong is a university graduation project. Choosing the topic of website design for selling wooden furniture is an idea that I myself have cherished and wished to implement. Also partly comes from the origin - my hometown is a carpentry village. And have business, production of fine art wood beans, wooden furniture, worship items... 
 </p>
 <p align="justify">  
-  &emsp; Therefore, through the process of studying and researching, I also hope to be able to build a sales website that meets the needs of the customers. basic function. In the future, I will cultivate new technologies to update my website.
+  &emsp; Therefore, through the process of studying and researching, I also hope to be able to build a sales website that meets the needs of the customers basic function. In the future, I will cultivate new technologies to update my website.
 </p>
 
 ![home-noithatminhphong](https://github.com/leeun22/Funiture-Website/assets/117708296/11c9f47e-d9aa-48bb-8137-982f0250a2ca)
